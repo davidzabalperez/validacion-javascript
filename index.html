@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>validacion formilario javascript</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- 
+    nif text
+    *nombre text
+    *apellidos text
+    *sexo radio
+    *mail text
+    tlf txt
+    calle txt
+    *cod. postal txt
+    *municipio select
+    newsletter checkbox
+-->
+    <br>
+    <form class="col-sm-3" oninput="return validate()">
+            <div class="form-group">
+              <label for="nif">Nif:</label>
+              <input type="text" class="form-control" id="nif" placeholder="Nif">
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="nombre">
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" class="form-control" id="apellidos" placeholder="apellidos">
+            </div>
+            <div class="form-group">
+              <label for="Email">Email:</label>
+              <input type="text" class="form-control" id="email" placeholder="email">
+            </div>
+            <div class="form-group">
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="telefono">
+                  </div>
+            <div class="form-group">
+                    <label for="codigopostal">Codigopostal:</label>
+                    <input type="text" class="form-control" id="codigopostal" placeholder="codigopostal">
+                  </div>
+            <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mujer" id="mujer" value="mujer" checked>
+                    <label class="form-check-label" for="mujer">Mujer:</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hombre" id="hombre" value="hombre">
+                    <label class="form-check-label" for="hombre">Hombre:</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="otro" id="otro" value="otro">
+                    <label class="form-check-label" for="otro">Otros:</label>
+                  </div>
+                  <br>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="newsletter">Newsletter:</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
